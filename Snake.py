@@ -88,15 +88,15 @@ class Snake(arcade.Sprite):
                 self.body[0][1] += self.speed * self.change_y
 
     def eat(self, mode):
-            if mode == 0: # for eat apple
+            if mode == 0: 
                 self.score += 1
                 self.body.append([self.body[len(self.body)-1][0], self.body[len(self.body)-1][1]])
             
-            elif mode == 1: # for eat pooneh
+            elif mode == 1: 
                 self.score -= 1
                 self.body.pop()
                 
-            elif mode == 2: # for eat pear
+            elif mode == 2: 
                 self.score += 2
                 self.body.append([self.body[len(self.body)-1][0], self.body[len(self.body)-1][1]])
                 self.body.append([self.body[len(self.body)-1][0], self.body[len(self.body)-1][1]])
